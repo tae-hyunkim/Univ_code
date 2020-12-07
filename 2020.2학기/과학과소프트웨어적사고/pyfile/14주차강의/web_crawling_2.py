@@ -23,7 +23,7 @@ try:
     '''
     news = "https://news.daum.net/"
 
-    webpage = requests.get(news)
+    webpage = requests.get(news,  headers={'User-Agent':'Mozilla/5.0'})
     if D:
         print("\n1) >> webpage : ", webpage)
 
